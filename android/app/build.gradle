@@ -98,7 +98,7 @@ android {
     }
     signingConfigs {
         release {
-            storeFile test-keystore.jks
+            storeFile file("test-keystore.jks")
             storePassword pirate
             keyAlias test
             keyPassword pirate
