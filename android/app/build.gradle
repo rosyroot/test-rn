@@ -97,10 +97,12 @@ android {
         }
     }
     signingConfigs {
-        storeFile file(test-keystore.jks)
-        storePassword pirate
-        keyAlias test
-        keyPassword pirate
+        release {
+            storeFile file(test-keystore.jks)
+            storePassword pirate
+            keyAlias test
+            keyPassword pirate
+        }
     }
     splits {
         abi {
