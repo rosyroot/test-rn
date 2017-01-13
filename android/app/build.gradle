@@ -96,6 +96,12 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+    signingConfigs {
+        storeFile file(test-keystore.jks)
+        storePassword pirate
+        keyAlias test
+        keyPassword pirate
+    }
     splits {
         abi {
             reset()
